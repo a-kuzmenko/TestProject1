@@ -1,0 +1,15 @@
+Feature:
+  As a user
+  I want to be able to add new clients in the system
+  So that I can add accounting data for that client
+
+  Scenario: Sing up a new user
+    Given the user is on landing page
+    When she chooses to sign up
+    And she provides the first name as Ann
+    And she provides the last name as Kuzmenko
+    And she provides the email as kyznechik140@gmail.com
+    And she provides the password as QAZwsx12345
+    And she provides the confirm password again as QAZwsx12345
+    And she signs-up
+    Then she should be logged in to the application
